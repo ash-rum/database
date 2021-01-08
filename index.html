@@ -1,0 +1,404 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+input {
+width:100%;
+margin-bottom:20px;
+padding:5px;
+height:30px;
+box-shadow:1px 1px 12px gray;
+border-radius:3px;
+border:none
+}
+textarea {
+width:100%;
+height:80px;
+margin-top:10px;
+padding:5px;
+box-shadow:1px 1px 12px gray;
+border-radius:3px
+}
+#send {
+width:103%;
+height:45px;
+margin-top:40px;
+border-radius:3px;
+background-color:#cd853f;
+border:1px solid #fff;
+color:#fff;
+font-family:'Raleway',sans-serif;
+font-size:18px
+}
+div#feedback {
+text-align:center;
+height:520px;
+width:330px;
+padding:20px 25px 20px 15px;
+background-color:#f3f3f3;
+border-radius:3px;
+border:1px solid #cd853f;
+font-family:'Raleway',sans-serif;
+float:left
+}
+.container {
+width:960px;
+margin:40px auto
+}
+
+</style>
+
+</head>
+<body id="myPage">
+
+<!-- Sidebar on click -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-xxlarge" style="display:none;z-index:2" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-display-topright w3-text-teal">Close
+    <i class="fa fa-remove"></i>
+  </a>
+  <a href="#" class="w3-bar-item w3-button">Link 1</a>
+  <a href="#" class="w3-bar-item w3-button">Link 2</a>
+  <a href="#" class="w3-bar-item w3-button">Link 3</a>
+  <a href="#" class="w3-bar-item w3-button">Link 4</a>
+  <a href="#" class="w3-bar-item w3-button">Link 5</a>
+</nav>
+
+
+
+
+
+<!-- Navbar -->
+<div class="w3-top">
+ <div class="w3-bar w3-theme-d2 w3-left-align">
+  <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+  <a href="#" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i>Logo</a>
+  <a href="#001" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Great Singer-Part 1</a>
+  <a href="#002" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Great Singer-Part 2</a>
+  <a href="#003" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Great Singer-Part 3</a>
+  <a href="#004" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Great Singer-Part 4t</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+    <button class="w3-button" title="Notifications">Dropdown <i class="fa fa-caret-down"></i></button>     
+    <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+       <li><a href="#googtrans(en|en)" class="lang-en lang-select" data-lang="en"><img src="" alt="USA"></a></li>
+       <li><a href="#googtrans(en|hi)" class="lang-es lang-select" data-lang="hi"><img src="" alt="HINDI"></a></li>
+       <li><a href="#googtrans(en|bn)" class="lang-es lang-select" data-lang="bn"><img src="" alt="BENGALI"></a></li>
+    </div>
+  </div>
+  <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-teal" title="Search"><i class="fa fa-search"></i></a>
+ </div>
+
+
+
+
+
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
+    <a href="#001" class="w3-bar-item w3-button">Great-Singer-Part-1</a>
+    <a href="#002" class="w3-bar-item w3-button">Great-Singer-Part-2</a>
+    <a href="#003" class="w3-bar-item w3-button">Great-Singer-Part-3</a>
+    <a href="#004" class="w3-bar-item w3-button">Great-Singer-Part-4</a>
+    <a href="#" class="w3-bar-item w3-button">Search</a>
+  </div>
+</div>
+
+
+
+
+<!-- Image Header -->
+<div class="w3-display-container w3-animate-opacity">
+  <img src="https://www.w3schools.com/w3images/sailboat.jpg" alt="boat" style="width:100%;min-height:350px;max-height:600px;">
+  <div class="w3-container w3-display-bottomleft w3-margin-bottom">  
+    <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-xlarge w3-theme w3-hover-teal" title="#">School Friends-1980 Batch</button>
+  </div>
+</div>
+
+<!-- Modal -->
+<div id="id01" class="w3-modal">
+  <div class="w3-modal-content w3-card-4 w3-animate-top">
+    <header class="w3-container w3-teal w3-display-container"> 
+      <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-teal w3-display-topright"><i class="fa fa-remove"></i></span>
+      <h4>We just showed you a modal..</h4>
+      <h5>Because we can <i class="fa fa-smile-o"></i></h5>
+    </header>
+    <div class="w3-container">
+      <p>Join as a member</p>
+      <p>We also conduct computer classes of different level. <a class="w3-text-teal" href="#contact">Send Message</a> to learn more!</p>
+    </div>
+    <footer class="w3-container w3-teal">
+      <p>Modal footer</p>
+    </footer>
+  </div>
+</div>
+
+<!-- Team Container -->
+<div class="w3-container w3-padding-64 w3-center" id="001">
+<h2>All Time Great Singers Part 1</h2>
+
+
+<div class="w3-row"><br>
+
+<div class="w3-quarter">
+  <img src="https://schoolfriend1980.000webhostapp.com/Contacts/scripts/001.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+  <h3>Lata-Mangeshkar</h3>
+  <p><a href="https://en.wikipedia.org/wiki/Lata_Mangeshkar">About</a></p>
+</div>
+
+<div class="w3-quarter">
+  <img src="https://schoolfriend1980.000webhostapp.com/Contacts/scripts/002.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+  <h3>Asha-Bhosle</h3>
+  <p><a href="https://en.wikipedia.org/wiki/Asha_Bhosle">About</a></p>
+</div>
+
+<div class="w3-quarter">
+  <img src="https://schoolfriend1980.000webhostapp.com/Contacts/scripts/003.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+  <h3>Kishore-Kumar</h3>
+  <p><a href="https://en.wikipedia.org/wiki/Kishore_Kumar">About</a></p>
+</div>
+
+<div class="w3-quarter">
+  <img src="https://schoolfriend1980.000webhostapp.com/Contacts/scripts/004.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+  <h3>Mohammad-Rafi</h3>
+  <p><a href="https://en.wikipedia.org/wiki/Mohammad_Rafi">About</a></p>
+</div>
+
+<div class="w3-quarter">
+  <img src="https://schoolfriend1980.000webhostapp.com/Contacts/scripts/005.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+  <h3>Sachin Dev Burman</h3>
+  <p><a href="https://en.wikipedia.org/wiki/S._D._Burman">About</a></p>
+</div>
+
+<div class="w3-quarter">
+  <img src="https://schoolfriend1980.000webhostapp.com/Contacts/scripts/006.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+  <h3>S P-Balasubrahmanyam</h3>
+  <p><a href="https://en.wikipedia.org/wiki/S._P._Balasubrahmanyam">About</a></p>
+</div>
+
+<div class="w3-quarter">
+  <img src="https://schoolfriend1980.000webhostapp.com/Contacts/scripts/007.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+  <h3>Manna-Dey</h3>
+  <p><a href="https://en.wikipedia.org/wiki/Manna_Dey">About</a></p>
+</div>
+
+<div class="w3-quarter">
+  <img src="https://schoolfriend1980.000webhostapp.com/Contacts/scripts/008.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+  <h3>K J Yesudas</h3>
+  <p><a href="https://en.wikipedia.org/wiki/K._J._Yesudas">About</a></p>
+</div>
+
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<!-- Container -->
+<div class="w3-container" style="position:relative">
+  <a onclick="w3_open()" class="w3-button w3-xlarge w3-circle w3-teal"
+  style="position:absolute;top:-28px;right:24px">+</a>
+</div>
+
+
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
+<!-- Team Container -->
+<div class="w3-container w3-padding-64 w3-center" id="002">
+<h2>All Time Great Singers Part 2</h2>
+
+
+<div class="w3-row"><br>
+
+<div class="w3-quarter">
+  <img src="/images/GSL-2-001.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+  <h3>Mahendra- Kapoor</h3>
+  <p><a href="">About</a></p>
+</div>
+
+<div class="w3-quarter">
+  <img src="/images/GSL-2-002.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+  <h3>Mukesh-Mathur</h3>
+  <p><a href="">About</a></p>
+</div>
+
+<div class="w3-quarter">
+  <img src="/images/GSL-2-003.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+  <h3>Hemanta Kumar Mukhopadhyay</h3>
+  <p><a href="https://en.wikipedia.org/wiki/Hemanta_Mukherjee">About</a></p>
+</div>
+
+<div class="w3-quarter">
+  <img src="/images/GSL-2-004.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+  <h3>Geeta Dutt</h3>
+  <p><a href="https://en.wikipedia.org/wiki/Geeta_Dutt">About</a></p>
+</div>
+
+<div class="w3-quarter">
+  <img src="/images/GSL-2-005.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+  <h3>Hem lata</h3>
+  <p><a href="https://en.wikipedia.org/wiki/Hemlata">About</a></p>
+</div>
+
+<div class="w3-quarter">
+  <img src="/images/GSL-2-006.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+  <h3>Suman Kalyanpur</h3>
+  <p><a href="https://en.wikipedia.org/wiki/Suman_Kalyanpur">About</a></p>
+</div>
+
+<div class="w3-quarter">
+  <img src="/images/GSL-2-007.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+  <h3>Usha Mangeshkar</h3>
+  <p><a href="https://en.wikipedia.org/wiki/Usha_Mangeshkar">About</a></p>
+</div>
+
+<div class="w3-quarter">
+  <img src="/images/GSL-2-008.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+  <h3>Haimanti Shukla</h3>
+  <p><a href="https://en.wikipedia.org/wiki/Haimanti_Shukla">About</a></p>
+</div>
+
+</div>
+</div>
+</footer>
+
+
+
+
+
+<!-- Team Container -->
+<div class="w3-container w3-padding-64 w3-center" id="003">
+<h2>All Time Great Singers Part 3</h2>
+
+
+<div class="w3-row"><br>
+
+<div class="w3-quarter">
+  <img src="/images/GSL-3-001.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+  <h3><a href="https://en.wikipedia.org/wiki/Kumar_Sanu">Kumar-Sanu</a></h3>
+</div>
+
+
+<div class="w3-quarter">
+  <img src="/images/GSL-3-002.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+  <h3><a href="https://en.wikipedia.org/wiki/Alka_Yagnik">Alka Yagnik</a></h3>
+</div>
+
+<div class="w3-quarter">
+  <img src="/images/GSL-3-003.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+  <h3><a href="https://en.wikipedia.org/wiki/Arijit_Singh">Arijit Singh</a></h3>
+</div>
+
+<div class="w3-quarter">
+  <img src="/images/GSL-3-004.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+  <h3><a href="https://en.wikipedia.org/wiki/Shreya_Ghoshal">Shreya Ghoshal</a></h3>
+</div>
+
+<div class="w3-quarter">
+  <img src="/images/GSL-3-005.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+  <h3><a href="https://en.wikipedia.org/wiki/Udit_Narayan">Udit Narayan</a></h3>
+  <p></p>
+</div>
+
+<div class="w3-quarter">
+  <img src="/images/GSL-3-006.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+  <h3><a href="https://en.wikipedia.org/wiki/Shaan_(singer)">Shaan</a></h3>
+</div>
+
+<div class="w3-quarter">
+  <img src="/images/GSL-3-007.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+  <h3><a href="https://en.wikipedia.org/wiki/Sadhana_Sargam">Sadhana Sargam</a></h3>
+</div>
+
+<div class="w3-quarter">
+  <img src="/images/GSL-3-008.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+  <h3><a href="https://en.wikipedia.org/wiki/Anuradha_Paudwal">Anuradha Paudwal</a></h3>
+</div>
+
+</div>
+</div>
+
+
+
+
+
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
+<!-- Team Container -->
+<div class="w3-container w3-padding-64 w3-center" id="004">
+<h2>All Time Great Singers Part 4</h2>
+
+
+<div class="w3-row"><br>
+
+<div class="w3-quarter">
+  <img src="001.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+  <h3>GIS-Part 4-001</h3>
+  <p>About</p>
+</div>
+
+<div class="w3-quarter">
+  <img src="002.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+  <h3>GIS-Part 4-002</h3>
+  <p>About</p>
+</div>
+
+<div class="w3-quarter">
+  <img src="003.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+  <h3>GIS-Part 4-003</h3>
+  <p>About</p>
+</div>
+
+<div class="w3-quarter">
+  <img src="004.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+  <h3>GIS-Part 4-004</h3>
+  <p>About</p>
+</div>
+
+<div class="w3-quarter">
+  <img src="005.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+  <h3>GIS-Part 4-005</h3>
+  <p>About</p>
+</div>
+
+<div class="w3-quarter">
+  <img src="006.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+  <h3>GIS-Part 4-006</h3>
+  <p>About</p>
+</div>
+
+<div class="w3-quarter">
+  <img src="007.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+  <h3>GIS-Part 4-007</h3>
+  <p>About</p>
+</div>
+
+<div class="w3-quarter">
+  <img src="008.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+  <h3>GIS-Part 4-008</h3>
+  <p>About</p>
+</div>
+
+</div>
+</div>
+</footer>
+
+
+</body>
+</html>
